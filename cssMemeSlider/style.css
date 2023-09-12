@@ -1,0 +1,79 @@
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.slider__carousel {
+	background-color: #25282A;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 10px;
+	border: 5px solid #161B22;
+	padding: 20px 200px 20px 200px;
+}
+
+.slider__carousel-slides {
+	width: 500px;
+	overflow: hidden;
+}
+
+.slider__carousel-slides-slider {
+	display: flex;
+	flex-wrap: nowrap;
+	transition: all 0.3s ease;
+}
+
+.slider__carousel-slide {
+	display: flex;
+	max-width: 100%;
+	padding-bottom: 20px;
+}
+
+.slider__carousel-slide img {
+	display: block;
+	overflow: hidden;
+	flex: 0 0 500px;
+}
+
+.slider__carousel-box {
+	display: flex;
+	justify-content: space-between;
+	width: 500px;
+}
+
+.slider__navigation {
+	display: flex;
+	column-gap: 5px;
+}
+
+.slider__navigation-bar {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #71ACFF;
+	cursor: pointer;
+}
+
+input[name='slide'] {
+	position: absolute;
+	visibility: hidden;
+}
+
+#slide-1:checked~.slider__carousel-slides-slider {
+	transform: translateX(0);
+}
+
+#slide-2:checked~.slider__carousel-slides-slider {
+	transform: translateX(-100%);
+}
+
+#slide-3:checked~.slider__carousel-slides-slider {
+	transform: translateX(-200%);
+}
+
+#slide-4:checked~.slider__carousel-slides-slider {
+	transform: translateX(-300%);
+}
