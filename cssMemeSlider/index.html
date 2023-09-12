@@ -4,12 +4,49 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
 	<title>cssMemeSlider</title>
 </head>
 
 <body>
+	<div class="container">
+		<div class="slider">
+			<div class="slider__carousel">
+				<div class="slider__carousel-radio">
+					<input type="radio" name="slide" id="slide-1" checked>
+					<input type="radio" name="slide" id="slide-2">
+					<input type="radio" name="slide" id="slide-3">
+					<input type="radio" name="slide" id="slide-4">
+				</div>
 
+				<div class="slider__carousel-slide"><img
+						src="/cssMemeSlider/img/c1063ea47e76ad2561f844fd4991ec067a1f4aabr1-1024-667v2_00.jpg" alt="meme">
+				</div>
+				<div class="slider__carousel-slide">
+					<img src="/cssMemeSlider/img/1636617839_2021-11-10-16_59_54.jpg" alt="meme">
+				</div>
+				<div class="slider__carousel-slide">
+					<img src="/cssMemeSlider/img/52fuzv.jpg" alt="meme">
+				</div>
+				<div class="slider__carousel-slide">
+					<img src="/cssMemeSlider/img/post_5d845e6a687e7.png" alt="meme">
+				</div>
+			</div>
+			<div class="slider__navigation">
+				<label class="slider__navigation-bar" for="slide-1"></label>
+				<label class="slider__navigation-bar" for="slide-2"></label>
+				<label class="slider__navigation-bar" for="slide-3"></label>
+				<label class="slider__navigation-bar" for="slide-4"></label>
+			</div>
+			<div class="slider__text">
+				<label class="slider__navigation-text" for="slide-1">meme1</label>
+				<label class="slider__navigation-text" for="slide-2">meme2</label>
+				<label class="slider__navigation-text" for="slide-3">meme3</label>
+				<label class="slider__navigation-text" for="slide-4">meme4</label>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
